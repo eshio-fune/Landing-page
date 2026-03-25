@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Enroll | NexaDev Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+<h2>NexaDev Academy</h2>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#courses">Courses</a></li>
+<li><a href="index.html#about">About Us</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="enroll-section">
+
+<h1>Student Enrollment Form</h1>
+
+<p>Fill the form below to enroll into NexaDev Academy.</p>
+
+
+
+<form id="enrollForm">
+
+
+<label>Full Name</label>
+<input type="text" required>
+
+
+<label>Email Address</label>
+<input type="email" required>
+
+
+<label>Phone Number</label>
+<input type="tel" required>
+
+
+<label>Course Interested In</label>
+
+<select required>
+
+<option value="">Select Course</option>
+
+<option>Web Development</option>
+
+<option>Data Analysis</option>
+
+<option>UI/UX Design</option>
+
+</select>
+
+
+<label>Educational Background</label>
+
+<select>
+
+<option>Secondary School</option>
+<option>Undergraduate</option>
+<option>Graduate</option>
+
+</select>
+
+
+<label>Preferred Learning Mode</label>
+
+<select>
+
+<option>Online</option>
+<option>Physical</option>
+
+</select>
+
+
+<label>Why do you want to join NexaDev Academy?</label>
+
+<textarea rows="4"></textarea>
+
+
+<button type="submit">Submit Enrollment</button>
+
+
+</form>
+
+</section>
+
+
+
+<footer>
+
+<p>© NexaDev Academy 2026 | All Right Reserved!</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
