@@ -1,58 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NexaDev Academy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NexaDev Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>NexaDev Academy</h1>
-        <p>Building the Next Generation of Developers</p>
-        <button id="enrollBtn">Enroll Now</button>
-    </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>
-            NexaDev Academy is a tech learning platform focused on teaching 
-            beginners how to build real-world web applications using 
-            HTML, CSS, and JavaScript.
-        </p>
-    </section>
+<!-- HEADER -->
 
-    <!-- Courses Section -->
-    <section class="courses">
-        <h2>Our Courses</h2>
+<header>
 
-        <div class="course-card">
-            <h3>HTML & CSS Fundamentals</h3>
-            <p>Learn how to structure and style beautiful websites.</p>
-        </div>
+<div class="logo">
+<h2>NexaDev Academy</h2>
+</div>
 
-        <div class="course-card">
-            <h3>JavaScript for Beginners</h3>
-            <p>Understand how to make your websites interactive.</p>
-        </div>
+<nav>
 
-        <div class="course-card">
-            <h3>Git & GitHub Basics</h3>
-            <p>Learn version control and how to collaborate on projects.</p>
-        </div>
-    </section>
+<ul>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 NexaDev Academy. All Rights Reserved.</p>
-    </footer>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><button class="signup">Sign Up</button></li>
+<li><button class="login">Login</button></li>
 
-    <!-- JavaScript Link -->
-    <script src="script.js"></script>
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h1>Become a Professional Developer</h1>
+
+<p>Learn tech skills from scratch and become job ready.</p>
+
+<a href="enroll.html">
+
+<button class="enrollBtn">Enroll Now</button>
+
+</a>
+
+</section>
+
+
+
+<!-- COURSES SECTION -->
+
+<section id="courses">
+
+<h2>Our Courses</h2>
+
+<div class="course-container">
+
+<div class="course-card">
+
+<h3>Web Development</h3>
+
+<p>HTML, CSS, JavaScript, GitHub and modern frameworks.</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>Data Analysis</h3>
+
+<p>Excel, Python, SQL, Power BI and data visualization.</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>UI/UX Design</h3>
+
+<p>Design professional interfaces for web and mobile apps.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About NexaDev Academy</h2>
+
+<p>
+
+NexaDev Academy trains beginners and aspiring developers to become industry-ready professionals through practical learning and real-world projects.
+
+</p>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© NexaDev Academy 2026 | All Right Reserved!</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
-          </html>
+
+</html>
