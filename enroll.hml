@@ -1,129 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaDev Academy - Scholarship Enrollment</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
 
-<title>Enroll | NexaDev Academy</title>
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-<link rel="stylesheet" href="style.css">
+        h1, h2 {
+            text-align: center;
+        }
 
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            font-weight: normal;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
 </head>
 
 <body>
 
+<div class="container">
+    <h1>NexaDev Academy</h1>
+    <p style="text-align:center;">Scholarship Enrollment Form</p>
 
-<header>
+    <form action="#" method="POST">
 
-<div class="logo">
+        <h2>1. Personal Information</h2>
+        <div class="row">
+            <div>
+                <label>Full Name</label>
+                <input type="text" name="fullname" required>
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" name="dob" required>
+            </div>
+        </div>
 
-<h2>NexaDev Academy</h2>
+        <div class="row">
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label>Nationality</label>
+                <input type="text" name="nationality">
+            </div>
+        </div>
 
+        <label>Phone Number</label>
+        <input type="tel" name="phone">
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Home Address</label>
+        <textarea name="address"></textarea>
+
+        <h2>2. Academic Information</h2>
+        <label>Current School</label>
+        <input type="text" name="school">
+
+        <label>Course of Study</label>
+        <input type="text" name="course">
+
+        <label>Level</label>
+        <input type="text" name="level">
+
+        <label>Student ID</label>
+        <input type="text" name="student_id">
+
+        <label>GPA / Results</label>
+        <input type="text" name="gpa">
+
+        <h2>3. Financial Information</h2>
+        <label>Parent/Guardian Name</label>
+        <input type="text" name="guardian">
+
+        <label>Occupation</label>
+        <input type="text" name="occupation">
+
+        <label>Annual Income</label>
+        <input type="number" name="income">
+
+        <label>Number of Dependents</label>
+        <input type="number" name="dependents">
+
+        <h2>4. Supporting Documents</h2>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Admission Letter</label>
+            <label><input type="checkbox"> Academic Transcript</label>
+            <label><input type="checkbox"> ID Card</label>
+            <label><input type="checkbox"> Passport Photograph</label>
+            <label><input type="checkbox"> Recommendation Letter</label>
+        </div>
+
+        <h2>5. Personal Statement</h2>
+        <textarea name="statement" rows="5" placeholder="Why do you deserve this scholarship?"></textarea>
+
+        <h2>6. Referee Information</h2>
+        <label>Referee Name</label>
+        <input type="text" name="referee_name">
+
+        <label>Position</label>
+        <input type="text" name="referee_position">
+
+        <label>Contact</label>
+        <input type="text" name="referee_contact">
+
+        <h2>7. Declaration</h2>
+        <label>
+            <input type="checkbox" required> I declare that the information provided is true.
+        </label>
+
+        <button type="submit">Enroll</button>
+
+    </form>
 </div>
 
-
-<nav>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html#courses">Courses</a></li>
-<li><a href="index.html#about">About Us</a></li>
-<li><a href="index.html#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-<section class="enroll-section">
-
-<h1>Student Enrollment Form</h1>
-
-<p>Fill the form below to enroll into NexaDev Academy.</p>
-
-
-
-<form id="enrollForm">
-
-
-<label>Full Name</label>
-<input type="text" required>
-
-
-<label>Email Address</label>
-<input type="email" required>
-
-
-<label>Phone Number</label>
-<input type="tel" required>
-
-
-<label>Course Interested In</label>
-
-<select required>
-
-<option value="">Select Course</option>
-
-<option>Web Development</option>
-
-<option>Data Analysis</option>
-
-<option>UI/UX Design</option>
-
-</select>
-
-
-<label>Educational Background</label>
-
-<select>
-
-<option>Secondary School</option>
-<option>Undergraduate</option>
-<option>Graduate</option>
-
-</select>
-
-
-<label>Preferred Learning Mode</label>
-
-<select>
-
-<option>Online</option>
-<option>Physical</option>
-
-</select>
-
-
-<label>Why do you want to join NexaDev Academy?</label>
-
-<textarea rows="4"></textarea>
-
-
-<button type="submit">Submit Enrollment</button>
-
-
-</form>
-
-</section>
-
-
-
-<footer>
-
-<p>© NexaDev Academy 2026 | All Right Reserved!</p>
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
